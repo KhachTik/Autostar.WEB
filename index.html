@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AutoLog">
+    <head>
+        <meta charset="UTF-8">
+        <title>Autolog.am</title>
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/filter.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/details.css">
+        <link rel="stylesheet" href="css/compare.css">
+        <link rel="stylesheet" href="css/notFound.css">
+        <link rel="stylesheet" href="css/statement.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+    <body ng-controller="AppCtrl">
+        <section class="header">{{header}}</section>
+        <section class="body" ng-view></section>
+        <section class="footer">{{footer}}</section>
+
+
+
+
+<!--=============================================================== scripts ========================================================================-->
+        <script src="assets/plugins/jquery/jquery-3.1.1.min.js"></script>
+        <script src="assets/plugins/angular-1.3.15/angular.js"></script>
+        <script src="assets/plugins/angular-1.3.15/angular-route.js"></script>
+
+        <script src="app.js"></script>
+        <script src="index.js"></script>
+        <script src="app-config.js"></script>
+
+        <script src="services/apis/base-api-service.js"></script>
+        <script src="services/helpers/constant-service.js"></script>
+        <script src="services/helpers/formatter-service.js"></script>
+        <script src="services/helpers/validation-service.js"></script>
+
+        <script src="modules/home/index.js"></script>
+        <script src="modules/filter/index.js"></script>
+        <script src="modules/compare/index.js"></script>
+        <script src="modules/details/index.js"></script>
+        <script src="modules/profile/index.js"></script>
+        <script src="modules/notFound/index.js"></script>
+        <script src="modules/addStatement/index.js"></script>
+        <script src="modules/editStatement/index.js"></script>
+
+    </body>
+</html>
